@@ -2,7 +2,7 @@ import os
 from setuptools import setup
 
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return open(os.path.join(os.path.dirname(__file__), fname, encoding="utf-8_sig")).read()
 
 setup(
     name = "jws",
@@ -12,7 +12,7 @@ setup(
     description = ("JSON Web Signatures implementation in Python"),
     license = "MIT",
     keywords = "jws json web security signing",
-    url = "http://github.com/brianlovesdata/python-jws",
+    url = "http://github.com/unotovive/python-jws",
     packages=['jws'],
     long_description=read('README.md'),
     classifiers=[
